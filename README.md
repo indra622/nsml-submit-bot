@@ -21,4 +21,4 @@ python main.py
 
 ## References.
 
-* 대회 출처 : [네이버 AI 해커톤 2018_Ai Vision](https://github.com/AiHackathon2018/AI-Vision)
+* 대회 출처 : [2022 Korean AI competition](https://github.com/KoreanAI2022/2022-Korean-AI-Competition)
