@@ -13,8 +13,8 @@ sessions와 models 사이즈는 일치 시켜주시길 바라며,
 각 제출은 처음 start_wait_sec만큼 기다린 다음
 한 시간 단위마다 제출합니다.
 """
-team_name = "team_41"       # 팀 이름을 넣어주시면 됩니다.
-data_name = "ir_ph2"        # 데이터 셋 이름을 넣어주시면 됩니다.
+team_name = "KAIC210"       # 팀 이름을 넣어주시면 됩니다.
+data_name = "t2-car"        # 데이터 셋 이름을 넣어주시면 됩니다.
 sessions = ['401', '402']   # 세션 번호를 문자열로 넣어주시면 됩니다.
 models = ['1', '1']         # 모델 이름을 넣어주면 됩니다.
 start_wait_sec = 3          # 해당 초만큼 기다린 다음 submit command를 실행합니다
@@ -25,7 +25,7 @@ def run_submit(command):
     now = time.time()
     print(f"[Command] {command}")
     print(datetime.now())
-    subprocess.call(command)
+    subprocess.call(command, shell=True)
     print(f"[Collapsed time] {time.time() - now}")
 
 
